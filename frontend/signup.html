@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Login</title>
+    <title>Sign up</title>
   </head>
   <body class="bg-white font-sans antialiased">
     <!-- navbar -->
@@ -13,28 +13,34 @@
         <h1 class="text-3xl font-bold text-center my-4">AI Blog Generator</h1>
       </div>
       <div class="flex items-center space-x-4">
-        <a href="#" class="hover:underline rounded-lg mx-8 italic font-medium"
-          >logout</a
-        >
-        <a href="#" class="hover:underline rounded-lg mx-8 italic font-medium"
-          >Signup</a
+        <a href="#" class="hover:underline rounded-lg mx-2.5 italic font-medium"
+          >login</a
         >
       </div>
     </nav>
-    <br />
     <br />
     <!-- main content -->
     <div class="flex items-center justify-center h-screen">
       <div class="bg-white p-8 shadow-md rounded-lg max-w-md w-full">
         <!-- login form -->
         <form class="space-y-4">
-          <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+          <h2 class="text-2xl font-bold mb-6 text-center">Signup</h2>
           <div>
             <input
               type="text"
               id="username"
               name="username"
               placeholder="Enter your username..."
+              class="w-full border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="Email"
+              name="Email"
+              placeholder="Enter your Email..."
               class="w-full border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               required
             />
@@ -49,11 +55,21 @@
               required
             />
           </div>
+          <div>
+            <input
+              type="text"
+              id="Repeat password"
+              name="RepeatPassword"
+              placeholder="Repeat your password..."
+              class="w-full border border-gray-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+              required
+            />
+          </div>
           <button
             type="submit"
             class="w-full bg-purple-700 text-white p-2 rounded-lg hover:bg-purple-800 transition duration-300"
           >
-            Login
+            Signup
           </button>
         </form>
       </div>
